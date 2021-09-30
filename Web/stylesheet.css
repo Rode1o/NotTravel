@@ -317,23 +317,54 @@ header {
 /*======================================================================================================================================*/
 
 @media (max-width: 480px) {
-  header,
-  .main {
-    padding: 20px;
-  }
-  .toggle .active {
-    right: 20px;
-  }
-  .content .text h2 {
-    font-size: 3em;
-  }
-  .btn {
-    padding: 15px 30px;
-  }
-  .footer {
-    flex-direction: column-reverse;
-  }
-  .sci {
-    margin-top: 40px;
-  }
+    header,
+    .main {
+        padding: 20px;
+    }
+    .toggle .active {
+        right: 20px;
+    }
+    .content .text h2 {
+        font-size: 3em;
+    }
+    .btn {
+        padding: 15px 30px;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .sci {
+        margin-top: 40px;
+    }
+}
+
+.Team{
+    height: 500px;
+    background-color: rgb(230, 154, 219);
+    text-align: center
+}
+    
+.col-5{
+    width: 19%;
+    height: 440px;
+    display: inline-block;
+    margin: 5px 4px 0;
+    text-align: center;
+    background-color: rgb(237, 153, 245);
+}
+
+.service-text.memebers{
+    font-style: italic; 
+}
+
+.service-content{
+    padding: 0.5em 0;
+}
+
+.section-text{
+    margin: 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
 }
