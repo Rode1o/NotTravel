@@ -339,18 +339,18 @@ header {
 }
 
 .Team{
-    height: 500px;
+    height: auto;
     background-color: rgb(230, 154, 219);
     text-align: center
 }
-    
+
 .col-5{
     width: 19%;
     height: 440px;
     display: inline-block;
     margin: 5px 4px 0;
     text-align: center;
-    background-color: rgb(237, 153, 245);
+    background-color: #CBB9FF;
 }
 
 .service-text.memebers{
@@ -363,7 +363,7 @@ header {
 
 .section-text{
     margin: 0;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
     text-align: center;
     font-size: 70px;
