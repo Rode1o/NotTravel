@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NotTravel</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
+
 <body>
+    <header>
+        <a href="#"><img src="Assets/ravel.png" class="logo" /></a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header> 
+    <section class="main"> 
+        <div class="content">
+            <div class="text">
+                <h2>
+                    <br />From Colombians <br />
+                    To <span>Travelers.</span>
+                </h2>
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                    architecto aspernatur consectetur deleniti ea eos et hic id ipsa
+                    laborum.
+                </p> 
+                <a href="#" class="btnvisit">Visit Now!</a>
+            </div> 
+            <div class="grid-container">
+                <div class="nav navMenu diamond">
+                    <img class="icon-menu" src="./Assets/menu/mapa.png" alt="" />
+                </div>
+                <div id="nav1" class="nav nav1 diamond">
+                    <img class="icon-subMenu" src="./Assets/menu/hat.png" alt="" />
+                </div>
+                <div id="nav2" class="nav nav2 diamond">
+                    <img class="icon-subMenu" src="./Assets/menu/herb.png" alt="" />
+                </div>
+                <div id="nav3" class="nav nav3 diamond">
+                    <img class="icon-subMenu" src="./Assets/menu/monkey.png" alt="" />
+                </div>
+                <div id="nav4" class="nav nav4 diamond">
+                    <img class="icon-subMenu" src="./Assets/menu/mountain.png" alt="" />
+                </div>
+                <div id="nav5" class="nav nav5 diamond">
+                    <img class="icon-subMenu" src="./Assets/menu/tortuga.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./menu.js"></script></script>
+
+
+    <!-- SLIDER IMAGES -->
+
     <div class="slider">
         <div class="slides">
+
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
@@ -48,6 +105,8 @@
              counter = 1;
          }
      }, 8000);
-    </script>
+    </script> 
 </body>
 </html>
+
+
