@@ -7,94 +7,47 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<section class="main">
-    <header>
-        <a href="#"><img src="Assets/ravel.png" class="logo"></a>
-        <div class="toggle"></div>
-        <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <div class="content">
-        <div class="text">
-            <h2><br>From Colombians <br> To <span>Travelers.</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto aspernatur consectetur deleniti ea
-                eos et hic id ipsa laborum. </p>
-            <a href="#" class="btn">Visit Now!</a>
-        </div>
-        <div class="slider">
-            <div class="slides active">
-                <img src="Assets/river.png">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="Assets/ayacopi.png" alt="" />
             </div>
-            <div class="slides">
-                <img src="Assets/ayacopi.png">
+            <div class="slide">
+                <img src="Assets/cristale.png" alt="" />
             </div>
-            <div class="slides">
-                <img src="Assets/cristale.png">
+            <div class="slide">
+                <img src="Assets/desert.png" alt="" />
+            </div>
+            <div class="slide">
+                <img src="Assets/river.png" alt="" />
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <ul class="sci">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        </ul>
-        <div class="prevNext">
-            <p>Always Fresh</p>
-            <span class="prev"><ion-icon name="skip-backward"></ion-icon></span>
-            <span class="next"><ion-icon name="skip-forward"></ion-icon></span>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
     </div>
-</section>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<script>
-    //toggle
-
-    const menutoggle = document.querySelector('.toggle');
-    const navigation = document.querySelector('.navigation');
-    menutoggle.onclick = function() {
-        menutoggle.classList.toggle('active')
-        navigation.classList.toggle('active')
-    }
-
-    //slider
-
-    const slides = document.querySelectorAll('.slides');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-
-    i = 0;
-    function ActiveSlide(n){
-        for (slide of slides)
-            slide.classList.remove('active')
-            slides[n].classList.add('active')
-    }
-    // function for prev btn
-    prev.addEventListener('click', function (){
-        if(i == 0) {
-            i = slides.length - 1;
-            ActiveSlide(i);
-        }
-        else {
-            i--;
-            ActiveSlide(i);
-        }
-    })
-    // function for next btn
-    next.addEventListener('click', function (){
-        if(i == slides.length - 1) {
-            i = 0;
-            ActiveSlide(i);
-        }
-        else {
-            i++;
-            ActiveSlide(i);
-        }
-    })
-</script>
+    <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     }, 5000);
+    </script>
 </body>
 </html>
