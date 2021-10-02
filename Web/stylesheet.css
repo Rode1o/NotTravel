@@ -14,6 +14,7 @@ body{
     background: radial-gradient(blueviolet, darkslateblue);
     flex-direction: column;
 }
+
 .slider {
     width: 800px;
     height: 500px;
@@ -196,6 +197,128 @@ header {
 .sci li a:hover {
   transform: translateY(-5px);
 }
+
+.noticias{
+    background-color: #917ed9;
+    box-sizing: border-box;
+    width: auto;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.btn-home{
+
+    padding: 1em;
+    border-radius: 1rem;
+    background-color: #917ed9;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin:1em auto;
+}
+.btn:hover{
+    background-color: #CBB9FF;
+}
+
+.btn-home:hover{
+    background-color: #CBB9FF;
+}
+
+.noticias .newscontainer{
+    background-color: #533ca6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias .newscontainer h1{
+    font-size: 24px;
+    color: white;
+    font-weight: 50px;
+    text-align: center;
+}
+
+
+.noticias  .box-container{
+    background-color: #917ed9;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.noticias  .box-container .box{
+    background-color: #D9D5F2;
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .box-container .box:hover{
+    transform: translatey(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0, 0.2);
+}
+
+
+
+.noticias  .box-container .box .card{
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.noticias  .box-container .box .card img{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.noticias  .box-container .box:hover .card img{
+    transform: scale(1.2);
+}
+
+.noticias  .box-container .box .newscontent{
+    padding:15px;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.noticias  .box-container .box .newscontent  h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.noticias  .box-container .box .newscontent p{
+    line-height: 1.5;
+    color:#333
+}
+
+.noticias  .box-container .box .newscontent a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #917ed9;
+    border: 1px solid #917ed9;
+    border-radius: 4px;
+}
+
 
 /*responsive*/
 
