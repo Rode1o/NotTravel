@@ -1,12 +1,19 @@
-# Not travel
-## Division de Secciones:
+![](https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png)
+<h1 align="right"> ⭐️ UTP: PEREIRA g31 ⭐️ </h1>
 
-temas mañana
-(FIGMA) mockups
-organizacion de ramas
+## GO travel
+<p>It is a collaborative application, in which users from Colombia and the world can leave photos of memories of places that tourists would love to visit.
+Developed with MEVN technology.</p>
+
+## <a href="https://floating-sea-97161.herokuapp.com/">MEVN full stack App</a>
+<div align="center">
+    <img src="https://ih0.redbubble.net/image.671768719.0753/flat,550x550,075,f.u6.jpg"/>
+</div>
 
 # Distribucion
-
+<details>
+  <summary>:rocket:&nbsp;&nbsp;&nbsp;<b>Jobs</b></summary>
+  
 ## HEADER (Duvan Rodelo)
 
 - carrousel de imagenes
@@ -39,3 +46,14 @@ organizacion de ramas
 
 - Año
 - Descripcion de la pagina
+</details>
+
+# Connect With US
+<h2> Authors</h2>
+
+ -  ***Manuel Rativa*** / [Github](#) - [Twitter](#) .
+ - ***Duvan Rodelo*** / [Github](https://github.com/Rode1o) - [Twitter](https://twitter.com/duvanrode1o) .
+ - ***Diego Rojas*** / [Github](#) - [Twitter](#) .
+ - ***Wilson Andres*** / [Github](#) - [Twitter](#) .
+ - ***Guillermo Paez*** / [Github](#) - [Twitter](#) .
+<br>
