@@ -477,6 +477,7 @@ header {
 /*TEAM*/
 
 .Team{
+
     height: 100%;
     background-color: #CBB9FF;
     text-align: center;
@@ -489,12 +490,27 @@ header {
     border-radius: 40px 10px;
 }
 .Team .col-5{
+
+    height: auto;
+    background-color: rgb(230, 154, 219);
+    text-align: center
+}
+
+.col-5{
+
     width: 19%;
     height: 100%;
     display: inline-block;
     margin: auto;
     text-align: center;
     background-color: #CBB9FF;
+
+
+}
+
+.service-text.memebers{
+    font-style: italic; 
+
 }
 
 .service-content{
@@ -503,7 +519,7 @@ header {
 
 .section-text{
     margin: 0;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
     text-align: center;
     font-size: 50px;
