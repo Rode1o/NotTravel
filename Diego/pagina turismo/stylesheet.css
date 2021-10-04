@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(blueviolet, darkslateblue);
+    flex-direction: column;
+}
+
+.Noticias{
+    background-color: #917ed9;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-home{
+
+    padding: 1em;
+    border-radius: 1rem;
+    background-color: #917ed9;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin:1em auto;
+}
+.btn:hover{
+    background-color: #CBB9FF;
+}
+
+.btn-home:hover{
+    background-color: #CBB9FF;
+}
+
+.Noticias .container{
+    background-color: #533ca6;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Noticias .container .heading{
+    background-color: #533ca6;
+    text-align: center;
+    font-size: 48px;
+    color: #d9d5f2;
+    font-weight: 100;
+}
+
+.Noticias .container .heading .h1{
+
+    background-color: #533ca6;
+    text-align: center;
+    font-size: 24px;
+    color: #CBB9FF;
+    font-weight: 50;
+}
+
+
+.Noticias  .box-container{
+    background-color: #917ed9;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.Noticias  .box-container .box{
+    background-color: #D9D5F2;
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .box-container .box:hover{
+    transform: translatey(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0, 0.2);
+}
+
+
+
+.Noticias  .box-container .box .card{
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.Noticias  .box-container .box .card img{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Noticias  .box-container .box:hover .card img{
+    transform: scale(1.2);
+}
+
+.Noticias  .box-container .box .content{
+    padding:15px;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.Noticias  .box-container .box .content  h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.Noticias  .box-container .box .content p{
+    line-height: 1.5;
+    color:#333
+}
+
+.Noticias  .box-container .box .content a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #917ed9;
+    border: 1px solid #917ed9;
+    border-radius: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

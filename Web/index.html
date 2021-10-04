@@ -7,12 +7,12 @@
     <title>NotTravel</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="Assets/ravel.png" class="logo" /></a>
+        <a href="#"><img src="Assets/slider/ravel.png" class="logo" /></a>
         <div class="toggle"></div>
         <ul class="navigation">
             <li><a href="#">Home</a></li>
@@ -20,21 +20,22 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </header>
-    <section class="main">
-        <div class="content">
+    </header> 
+    <section class="main"> 
+        <div class="content"> 
             <div class="text">
                 <h2>
                     <br />From Colombians <br />
                     To <span>Travelers.</span>
                 </h2>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                     architecto aspernatur consectetur deleniti ea eos et hic id ipsa
                     laborum.
                 </p>
-                <a href="#" class="btn">Visit Now!</a>
-            </div>
+                <button href="#" class="btnvisit">Visit Now!</button>
+
+            </div> 
             <div class="grid-container">
                 <div class="nav navMenu diamond">
                     <img class="icon-menu" src="./Assets/menu/mapa.png" alt="" />
@@ -56,59 +57,191 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <ul class="sci">
-                <li>
-                    <a href="#">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-          </ul>
+
+    </section> 
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./menu.js"></script></script>
+
+<!--    SLIDER IMAGES -->
+
+    <div class="slider">
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="Assets/slider/ayacopi.png" alt="" />
+            </div>
+            <div class="slide">
+                <img src="Assets/slider/cristale.png" alt="" />
+            </div>
+            <div class="slide">
+                <img src="Assets/slider/desert.png" alt="" />
+            </div>
+            <div class="slide">
+                <img src="Assets/slider/river.png" alt="" />
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
         </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div> 
+    </div>
+    <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     }, 8000);
+    </script>
+
+<!--    section noticias -->
+
+    <section class="noticias">
+    <div class="newscontainer">
+        <h1>  NOTICIAS </h1>
+        <button  a href="#" class="btn-home">HOME</button>
+        </div>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="card">
+                <figure>
+                    <img src="./Assets/ANDINA/Festival_cometas_andina.jpg">
+                </figure>
+            </div>
+            <div class="newscontent">
+                <h3>REGION ANDINA</h3>
+                <p>Festival De Cometas De Villa De Leyva </p>
+                <a href="#" class="btn">VISIT NOW!!!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <figure>
+                    <img src="./Assets/AMAZONICA/amazonia.jpg">
+                </figure>
+            </div>
+            <div class="newscontent">
+                <h3>REGION AMAZONICA</h3>
+                <p>Conozca el top 3 de los platos típicos de la región</p>
+                <a href="#" class="btn">VISIT NOW!!!</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="card">
+                <figure>
+                    <img src="./Assets/CARIBE/gaitas y tambores.jpg">
+                </figure>
+            </div>
+            <div class="newscontent">
+                <h3 href="#" >REGION CARIBE</h3>
+                <p>Festival de Gaitas y Tambores</p>
+                <a href="#" class="btn">VISIT NOW!!!</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="card">
+                <figure>
+                    <img src="./Assets/ORINOQUIA/Noticia_orinoquia.jpg">
+                </figure>
+            </div>
+            <div class="newscontent">
+                <h3 href="#" class="title">REGION ORINOQUIA</h3>
+                <p>La cruzada de artistas y gestores culturales de la Orinoquía</p>
+                <a href="#" class="btn">VISIT NOW!!!</a>
+            </div>
+        </div> 
+
+
+        <div class="box">
+            <div class="card">
+                <figure>
+                    <img src="./Assets/PACIFICA/NOTICIA PACIFICO 2.jpg">
+                </figure>
+            </div>
+            <div class="newscontent">
+                <h3 href="#" clas="title">REGION PACIFICA</h3>
+                <p>El pacífico colombiano y su avistamiento de ballenas</p>
+                <a href="#" class="btn">VISIT NOW!!!</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+ <!-- section noticias -->
+
+
+    <section class="Team">
+
       </div>
   </section>
   <div class="Team" style="background-color: #CBB9FF">
+
       <p class="section-text">Team</p>
       <div class="col-5">
         <p>
-          <img src="GLL.jpg" alt="Gullermo Paez" style="width: 85%" />
+          <img src="./Assets/members/GLL.jpg"/>
         </p>
         <div class="service-content">
-          <h2>Gillermo Paez</h2>
+          <h2>Guillermo Paez</h2>
           <p class="service-text memebers">SCRUM MASTER</p>
         </div>
       </div>
+
+      <div class="col-5">
+
       <div class="col-5" >
+
         <p>
-          <img src="Manuel.jpeg" alt="Manuel Rátiva" style="width: 85%" />
+            <img src="./Assets/members/Manuel.jpeg"/>
         </p>
         <div class="service-content">
           <h2>Manuel Rátiva</h2>
           <p class="service-text memebers">PRODUCT OWNER</p>
         </div>
       </div>
+
+      <div class="col-5">
+
       <div class="col-5" >
+
         <p>
-          <img src="DV.jpg" alt="Duvan Rodelo" style="width: 85%" />
+            <img src="./Assets/members/DV.jpg"/>
         </p>
         <div class="service-content">
           <h2>Duvan Rodelo</h2>
           <p class="service-text memebers">DEVELOPER TEAM</p>
         </div>
       </div>
+
+      <div class="col-5">
+
       <div class="col-5" >
+
         <p>
-          <img src="DG.jpg" alt="Diego Rojas" style="width: 85%" />
+            <img src="./Assets/members/DG.jpg"/>
         </p>
         <div class="service-content">
           <h2>Diego Rojas</h2>
@@ -117,13 +250,13 @@
       </div>
       <div class="col-5">
         <p>
-          <img src="AC.jpeg" alt="Andrés Carvajal" style="width: 85%" />
+            <img src="./Assets/members/AC.jpeg"/>
         </p>
         <div class="service-content">
           <h2>Andrés Carvajal</h2>
           <p class="service-text memebers">DEVELOPER TEAM</p>
         </div>
       </div>
-    </div>
+    </section>
   </body>
-</html>
+</html> 
